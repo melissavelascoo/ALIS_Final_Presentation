@@ -1,0 +1,31 @@
+/* Composición: bienvenida independiente del traductor. */
+.top-stage{height:565px}
+.hero-section{position:relative;z-index:1;color:white}
+.hero-inner{max-width:1280px;margin:0 auto;padding:96px 42px 94px;min-height:459px;position:relative}
+.hero-section .intro{margin-bottom:27px}
+.hero-start{display:inline-flex;align-items:center;gap:36px;min-height:51px;padding:12px 18px 12px 23px;border-radius:100px;background:#43dfd2;color:#082740;font-size:13px;font-weight:800;box-shadow:0 14px 32px #071d2d2b;transition:transform .25s ease,background .25s ease,box-shadow .25s ease}
+.hero-start span{font-size:20px;font-weight:400;transition:transform .25s ease}
+.hero-start:hover{background:#8ff1e9;transform:translateY(-3px);box-shadow:0 17px 35px #0515294d}
+.hero-start:hover span{transform:translate(3px,-3px)}
+.hero-scroll-cue{position:absolute;right:42px;bottom:100px;color:#9cc1d1;font-size:10px;letter-spacing:.18em;font-weight:800;display:flex;align-items:center;gap:14px}
+.hero-scroll-cue span{font-size:23px;color:#4fe5db;font-weight:400}
+.workspace-section{padding-top:75px}
+.workspace-intro{display:flex;justify-content:space-between;align-items:end;gap:22px;margin-bottom:27px}
+.workspace-eyebrow{display:block;font-size:10px;letter-spacing:.17em;font-weight:800;color:#008d9f;white-space:nowrap}
+.workspace-intro h2{font-size:clamp(25px,3vw,36px);margin:5px 0 0;letter-spacing:-.06em}
+.workspace-intro p{margin:0 0 3px;color:#657d90;font-size:13px}
+.hero-section .intro{animation:arrive .7s .1s both}
+/* Escenario cuadrado e ilustración original aislada. */
+.sign-stage{min-height:300px;aspect-ratio:1.28 / 1;background:radial-gradient(circle at 50% 30%,#fbfefe 0%,#e9f4f6 95%)}
+.sign-stage:before{width:234px;height:234px;box-shadow:0 0 0 35px #2abdc208,0 0 0 70px #2abdc206}
+.stage-slide{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:2;opacity:1;transform:translateY(0) scale(1);animation:signArrive .26s ease both;pointer-events:none}
+.stage-slide.stage-exiting{animation:signExit .26s ease both}
+.sign-actual-image{display:block;width:min(82%,310px);height:90%;max-height:none;object-fit:contain;filter:drop-shadow(0 18px 17px #1b4b5622)}
+@keyframes signArrive{from{opacity:0;transform:translateY(10px) scale(.984)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes signExit{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(-8px)}}
+.sign-note{min-height:20px}
+.sequence-chip[aria-current="step"]{background:#43dfd2;box-shadow:0 4px 12px #21b8b32d;border-color:#34c7c8}
+@media(max-width:1050px){.hero-inner{padding-left:30px;padding-right:30px}}
+@media(max-width:760px){.top-stage{height:475px}.hero-inner{min-height:400px;padding:73px 22px 60px}.hero-scroll-cue{display:none}.hero-section .intro{margin-bottom:30px}.workspace-section{padding-top:48px}.workspace-intro{display:block}.workspace-intro p{margin-top:6px}.sign-stage{min-height:270px;aspect-ratio:1.28/1}}
+@media(max-width:480px){.top-stage{height:480px}.hero-inner{min-height:410px;padding:80px 20px 55px}.hero-start{min-height:46px}.workspace-section{padding-top:35px}.workspace-intro h2{font-size:27px}.sign-stage{min-height:247px}.sign-actual-image{height:92%;width:88%}}
+@media(prefers-reduced-motion:reduce){.stage-slide,.stage-slide.stage-exiting{animation:none;transform:none}.hero-start,.hero-start span{transition:none}}

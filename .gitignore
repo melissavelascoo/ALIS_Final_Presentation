@@ -1,0 +1,28 @@
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Archivos generados por Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Dataset de entrenamiento (conservar localmente)
+/HandSignDetector/Data/
+
+# Configuración local
+.env
+.env.*
+!.env.example
+
+# Archivos temporales
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+
+# Configuración de editores
+.vscode/
+.idea/
