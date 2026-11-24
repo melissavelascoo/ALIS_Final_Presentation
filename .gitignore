@@ -1,28 +1,47 @@
-
 # Entornos virtuales
 .venv/
 venv/
 env/
 
-# Archivos generados por Python
+# Python: bytecode, pruebas y herramientas
 __pycache__/
 *.py[cod]
+*$py.class
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
 
-# Dataset de entrenamiento (conservar localmente)
-/HandSignDetector/Data/
+# Artefactos de empaquetado
+build/
+dist/
+*.egg-info/
 
-# Configuración local
+# Datasets SLR locales (imágenes, videos y características procesadas)
+/slr/data/
+
+# Logs de entrenamiento TensorBoard; conservar los modelos y etiquetas
+/slr/models/*/logs/
+
+# Configuración local y secretos
 .env
 .env.*
 !.env.example
 
-# Archivos temporales
+# Archivos temporales y del sistema operativo
 .DS_Store
 Thumbs.db
+Desktop.ini
 *.tmp
 *.bak
+*.log
+*.swp
 
-# Configuración de editores
+# Configuración local de editores
 .vscode/
 .idea/
+
+# Checkpoints locales de notebooks
+**/.ipynb_checkpoints/

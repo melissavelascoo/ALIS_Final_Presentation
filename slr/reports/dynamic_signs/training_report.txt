@@ -1,0 +1,10 @@
+=== REPORTE DE ENTRENAMIENTO ALIS (LSTM) ===
+Clases (6): ['HOLA', 'J', 'MI', 'NOMBRE', 'SER', 'Z']
+Forma de entrada: (30, 454)
+Muestras Train (original / aumentado): 120 / 720
+Muestras Val: 30
+Epocas ejecutadas: 200
+Mejor epoca: 198
+Mejor Val Loss: 0.2522
+Mejor Val Accuracy: 1.0000
+Train Accuracy (mejor epoca): 1.0000

@@ -1,0 +1,8 @@
+=== REPORTE DE ENTRENAMIENTO Y VALIDACION DE ALIS (MLP) ===
+Clases (24): ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y']
+Muestras -> Train (con espejo): 10080 | Val: 1056
+Epocas ejecutadas: 62 (mejor epoca: 47)
+Mejor Val Loss: 0.0475
+Mejor Val Accuracy: 0.9972
+Modelo Guardado: C:\IA\ALIS\slr\models\static_signs\model.h5
+Etiquetas: C:\IA\ALIS\slr\models\static_signs\labels.txt

@@ -1,0 +1,92 @@
+=== REPORTE DE LIMPIEZA Y PREPROCESAMIENTO ALIS (63 COORDS) ===
+Archivo origen:               C:\IA\ALIS\slr\data\static_signs\raw\landmarks_raw.csv
+Filas iniciales:              7200
+Eliminadas por metadatos:     0
+Eliminadas por nulos/Inf:     0
+Eliminadas por duplicados:    0
+Eliminadas manos colapsadas:  0
+Filas limpias finales:        7200
+
+--- Distribucion por letra ---
+label
+A    300
+B    300
+C    300
+D    300
+E    300
+F    300
+G    300
+H    300
+I    300
+K    300
+L    300
+M    300
+N    300
+O    300
+P    300
+Q    300
+R    300
+S    300
+T    300
+U    300
+V    300
+W    300
+X    300
+Y    300
+
+--- Distribucion por letra y sesion ---
+label  session        
+A      S1P1_nightlight    150
+       S2P1_daylight      150
+B      S1P1_nightlight    150
+       S2P1_daylight      150
+C      S1P1_nightlight    150
+       S2P1_daylight      150
+D      S1P1_nightlight    150
+       S2P1_daylight      150
+E      S1P1_nightlight    150
+       S2P1_daylight      150
+F      S1P1_nightlight    150
+       S2P1_daylight      150
+G      S1P1_nightlight    150
+       S2P1_daylight      150
+H      S1P1_nightlight    150
+       S2P1_daylight      150
+I      S1P1_nightlight    150
+       S2P1_daylight      150
+K      S1P1_nightlight    150
+       S2P1_daylight      150
+L      S1P1_nightlight    150
+       S2P1_daylight      150
+M      S1P1_nightlight    150
+       S2P1_daylight      150
+N      S1P1_nightlight    150
+       S2P1_daylight      150
+O      S1P1_nightlight    150
+       S2P1_daylight      150
+P      S1P1_nightlight    150
+       S2P1_daylight      150
+Q      S1P1_nightlight    150
+       S2P1_daylight      150
+R      S1P1_nightlight    150
+       S2P1_daylight      150
+S      S1P1_nightlight    150
+       S2P1_daylight      150
+T      S1P1_nightlight    150
+       S2P1_daylight      150
+U      S1P1_nightlight    150
+       S2P1_daylight      150
+V      S1P1_nightlight    150
+       S2P1_daylight      150
+W      S1P1_nightlight    150
+       S2P1_daylight      150
+X      S1P1_nightlight    150
+       S2P1_daylight      150
+Y      S1P1_nightlight    150
+       S2P1_daylight      150
+
+--- Lateralidad detectada ---
+handedness
+Unknown    7200
+
+Minimo por clase: 300 | Maximo por clase: 300

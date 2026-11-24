@@ -1,0 +1,48 @@
+=== REPORTE DE EVALUACION ALIS (LSTM AMBIDIESTRO) ===
+
+Clases (6): ['HOLA', 'J', 'MI', 'NOMBRE', 'SER', 'Z']
+Muestras Test (original / espejo / total): 30 / 30 / 60
+Forma de entrada: (30, 454)
+
+--- Desglose por lateralidad ---
+Mano original -> Accuracy: 1.0000 | Loss: 0.2522 | Macro F1: 1.0000
+Mano opuesta  -> Accuracy: 1.0000 | Loss: 0.2523 | Macro F1: 1.0000
+
+--- Metricas globales (Ambas manos: 60 muestras) ---
+Test Loss:                 0.2523
+Test Accuracy:             1.0000
+Test Categorical Accuracy: 1.0000
+Test Macro F1:             1.0000
+Test Weighted F1:          1.0000
+
+--- Analisis de confianza (Ambas manos) ---
+Confianza media global:    0.9622
+Confianza media aciertos:  0.9622
+Confianza media errores:   0.0000
+Con umbral >= 0.75:        Accuracy = 1.0000 (cobertura: 100.0%)
+
+--- Metricas por clase (Ambas manos) ---
+              precision    recall  f1-score   support
+
+        HOLA     1.0000    1.0000    1.0000        10
+           J     1.0000    1.0000    1.0000        10
+          MI     1.0000    1.0000    1.0000        10
+      NOMBRE     1.0000    1.0000    1.0000        10
+         SER     1.0000    1.0000    1.0000        10
+           Z     1.0000    1.0000    1.0000        10
+
+    accuracy                         1.0000        60
+   macro avg     1.0000    1.0000    1.0000        60
+weighted avg     1.0000    1.0000    1.0000        60
+
+--- Matriz de confusion (Filas: Real | Columnas: Predicho) ---
+            HOLA       J      MI  NOMBRE     SER       Z
+HOLA          10       0       0       0       0       0
+J              0      10       0       0       0       0
+MI             0       0      10       0       0       0
+NOMBRE         0       0       0      10       0       0
+SER            0       0       0       0      10       0
+Z              0       0       0       0       0      10
+
+--- Detalle de muestras fallidas ---
+  Ningun error: 100% de aciertos tanto en mano original como en mano opuesta.

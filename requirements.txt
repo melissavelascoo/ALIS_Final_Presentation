@@ -1,0 +1,19 @@
+# Core numerico y datos (bloqueado a NumPy < 2 por TensorFlow y MediaPipe)
+numpy==1.26.4
+pandas==2.2.3
+scikit-learn==1.5.2
+
+# Deep Learning y Vision Artificial
+tensorflow==2.15.1
+keras==2.15.0
+mediapipe==0.10.21
+opencv-contrib-python==4.10.0.84
+cvzone==1.5.6
+
+# API y servidor web (ALIS)
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.32,<1.0
+python-multipart>=0.0.12,<1.0
+
+# Graficas y evaluacion
+matplotlib==3.9.4
